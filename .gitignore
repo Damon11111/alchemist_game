@@ -1,4 +1,4 @@
-# Unity generated folders
+# --- Unity-generated folders ---
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -7,43 +7,39 @@
 [Ll]ogs/
 UserSettings/
 MemoryCaptures/
-Assets/AssetStoreTools*
 
-# Visual Studio / JetBrains Rider
-.vscode/
-.idea/
-*.csproj
-*.unityproj
-*.sln
-*.suo
-*.tmp
-*.user
-*.userprefs
-*.pidb
-*.booproj
-*.svd
-
-# Unity cache and build data
-*.stackdump
-*.apk
-*.aab
-*.unitypackage
-*.exe
-*.dll
-*.dylib
-*.pdb
-
-# Unity asset database (can grow large)
-*.resS
-*.resource
-*.asset
-*.assets
-*.fbx
-
-# OS generated
+# --- OS-specific files ---
 .DS_Store
 Thumbs.db
 
-# Burst and package cache
+# --- IDE files ---
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.unityproj
+*.user
+*.userprefs
+
+# --- Exclude build artifacts ---
+*.apk
+*.aab
+*.exe
+*.dll
+*.pdb
+
+# --- Unity package cache (safe to ignore) ---
 Library/PackageCache/
 Library/Bee/
+
+# --- Optional: exclude auto-generated shader cache ---
+*.shadercache
+
+# --- Do NOT exclude the following ---
+
+# ✅ .asset, .assets, .fbx, .mat, .prefab 等 Unity 资源（默认不忽略）
+# ✅ Scenes, Materials, Scripts, Textures, Shaders 等必须保留
+# ✅ .resS 也可保留构建结果（如打包分享），否则忽略
+
+# --- Git LFS optional setup (if using large files like textures/models) ---
+# .gitattributes can be set up for Git LFS if needed
